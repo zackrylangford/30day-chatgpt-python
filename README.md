@@ -17,4 +17,4 @@ To navigate through the repository, simply click on the folder for the day you'r
 
 ## More Information
 
-For more details about each day's learning progress, check out my YouTube channel [https://www.youtube.com/channel/UCecbZBlKqRKx19zwoW9gm0A]. I post daily videos documenting my learning journey, my interactions with ChatGPT, and how I'm improving my Python skills. 
+For more details about each day's learning progress, check out my YouTube channel [Zack Langford Youtube](https://www.youtube.com/channel/UCecbZBlKqRKx19zwoW9gm0A). I post daily videos documenting my learning journey, my interactions with ChatGPT, and how I'm improving my Python skills. 
