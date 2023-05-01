@@ -4,8 +4,10 @@ This folder contains the initial Python skills assessment that was created by Ch
 
 Inside, you will find:
 
-- The Python file `assessment.py` containing the questions and my solutions.
-- A text file `assessment_summary.md` providing a brief summary of the assessment, my performance, and the learning plan suggested by ChatGPT based on my strengths and weaknesses.
+- The markdown file `assessment.md` contains the questions that ChatGPT come up with for my assesment
+- The `my_answers.py` file contains my attempts at answering the questions.
+- A markdown file `assessment_summary.md` providing a brief summary of the assessment, my performance, and the learning plan suggested by ChatGPT based on my strengths and weaknesses.
+- A markdown file `learning_plan.md` which is the suggested learning plan that GPT provided after the assessment.
 
 This assessment served as the starting point of my Python learning journey, helping to tailor the subsequent learning process to my specific needs and skill level.
 
