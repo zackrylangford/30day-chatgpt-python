@@ -145,3 +145,109 @@ Let's break it down:
 - `(year % 400 == 0)`: This part of the condition checks that the year is divisible by 400. This will include years like 2000 and 2400, which are the exceptions to the rule that a year can't be a leap year if it's divisible by 100.
 
 These two conditions are combined with an "or", so if either one of them is true, the year will be included in the list. This gives us the correct list of leap years in the range from 1900 to 2100.
+
+# My question - Having trouble with #3, can you explain it. Here is what I have so far: 
+
+words = ['hello', 'world', 'my', 'name', 'is', 'Python']
+
+characters = [char for char in words[:1]]
+
+print(characters)
+
+# GPT Answer: 
+
+You're on the right track, but there's a small issue with your current list comprehension. Your current code is trying to take the first word from the list `words` instead of the first character from each word in `words`.
+
+In a list comprehension, the `for` loop will iterate through each item in the iterable. In this case, each item is a word (a string), so you can access the first character of each word directly with `word[0]`.
+
+Here is the corrected version of your code:
+
+```python
+words = ['hello', 'world', 'my', 'name', 'is', 'Python']
+
+characters = [word[0] for word in words]
+
+print(characters)  # Output: ['h', 'w', 'm', 'n', 'i', 'P']
+```
+
+In this code, `word[0]` will give you the first character of each word in the list `words`.
+
+
+## More advanced list comprehension ideas
+
+Absolutely! Here's a deeper dive into the three concepts:
+
+1. **Nested List Comprehension**: A nested list comprehension means a list comprehension inside another list comprehension. It's often used for creating matrices or lists of lists. Here's an example of how you might create a 5x5 matrix with a nested list comprehension:
+
+    ```python
+    matrix = [[i for i in range(5)] for _ in range(5)]
+    ```
+    In the outer list comprehension, `_ in range(5)` is simply a loop that repeats 5 times, and for each repetition it creates a new list with `[i for i in range(5)]`.
+
+2. **Complex Conditional**: A complex conditional in a list comprehension is when you're not just checking for a simple condition (like `i % 2 == 0`), but instead might be replacing values or checking multiple conditions. Here's an example based on the exercise:
+
+    ```python
+    nums = [-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]
+    descriptions = ['negative' if i < 0 else 'positive' for i in nums]
+    ```
+    In this list comprehension, `'negative' if i < 0 else 'positive'` is the complex conditional. It checks if `i` is less than 0, and if so, it replaces `i` with 'negative', otherwise it replaces it with 'positive'.
+
+3. **Complex Data Types**: Complex data types refer to data types that are more than just integers, floats, booleans, or strings. They could be lists, dictionaries, sets, tuples, etc. When you have a list of dictionaries, you can extract data from each dictionary in a list comprehension:
+
+    ```python
+    users = [{'name': 'John', 'age': 15}, {'name': 'Jane', 'age': 25}, {'name': 'Doe', 'age': 35}]
+    names = [user['name'] for user in users]
+    ```
+    In this list comprehension, `user['name']` extracts the value associated with the 'name' key from each dictionary.
+
+These are more advanced concepts related to list comprehensions and they might take a bit of practice to get comfortable with. Don't worry if you don't get them right away, it's all part of the learning process. Let me know if there's anything else you need help with!
+
+
+## My question: 
+
+What else should I practice or learn about in regards to list comprehensions for day 1? 
+
+## GPT answer: 
+
+Good job on your progress so far! Here are a few more things you can learn and practice regarding list comprehensions:
+
+1. **Flattening Lists**: Sometimes you have a list of lists (like a 2D matrix) and you want to flatten it into a single list. You can achieve this using a list comprehension.
+
+   Example:
+
+   ```python
+   list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+   flat_list = [num for sublist in list_of_lists for num in sublist]
+   print(flat_list)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+   ```
+
+   The example above uses nested list comprehension to flatten a list of lists into a single list.
+
+2. **List Comprehensions with `zip`**: `zip` is a built-in function that allows you to loop over two or more lists at the same time. This can be combined with list comprehensions to perform some interesting operations.
+
+   Example:
+
+   ```python
+   list1 = [1, 2, 3]
+   list2 = ['a', 'b', 'c']
+   zipped = [(num, letter) for num, letter in zip(list1, list2)]
+   print(zipped)  # Output: [(1, 'a'), (2, 'b'), (3, 'c')]
+   ```
+
+   In this example, `zip(list1, list2)` creates a pair of elements from `list1` and `list2` for each iteration, and the list comprehension creates a list of these pairs.
+
+3. **List Comprehensions with `enumerate`**: `enumerate` is another built-in function that you can use in a list comprehension. It allows you to loop over an iterable and have an automatic counter.
+
+   Example:
+
+   ```python
+   letters = ['a', 'b', 'c']
+   enumerated = [(i, letter) for i, letter in enumerate(letters)]
+   print(enumerated)  # Output: [(0, 'a'), (1, 'b'), (2, 'c')]
+   ```
+
+   The `enumerate(letters)` function generates a counter `i` and a value `letter` for each iteration, and the list comprehension creates a list of pairs containing the index and the corresponding element.
+
+Practice using these concepts in your list comprehensions to get a better understanding of how they work. Remember, understanding comes with time and practice. So, keep going!
+
+
