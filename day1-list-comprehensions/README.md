@@ -16,8 +16,8 @@ We interacted with ChatGPT, asking for explanations, examples, and exercises to 
 ### Files:
 
 1. `list_comprehensions_explanation.md`: Contains the explanation provided by ChatGPT on list comprehensions.
-2. `list_comprehensions_examples.md`: Contains examples of list comprehensions provided by ChatGPT.
-3. `list_comprehensions_exercises.md`: Contains practice exercises on list comprehensions provided by ChatGPT along with our solutions.
+2. `list_comprehensions_exercises.md`: Contains practice exercises on list comprehensions provided by ChatGPT along with our solutions.
+3. `day1_practice.py`: My practice sheet for the exercises. 
 
 ### Key Learnings:
 

@@ -63,7 +63,6 @@ Here are 10 more exercises that you can work on to practice list comprehensions:
 
 8. **Divisors**: For all numbers from 1 to 50, create a list comprehension that generates a list of tuples, where each tuple is a number and a list of its divisors.
 
-
 9. **Word Classification**: Given a list of words, create a list comprehension that generates a list of tuples, where each tuple is a word from the list and a string 'short' or 'long' depending on whether the word is shorter or longer than 5 characters.
 `words = ['Python', 'is', 'a', 'high-level', 'programming', 'language']`
 
