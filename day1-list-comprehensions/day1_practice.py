@@ -9,8 +9,6 @@
 These exercises should give you a good sense of how list comprehensions work. Feel free to ask if you need any help or explanations!
 
 """
-
-
 #1. Create a list comprehension that generates the squares of the numbers from 1 to 10.
 
 squares = [x**2 for x in range(0,11)]
