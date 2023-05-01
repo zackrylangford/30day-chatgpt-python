@@ -31,4 +31,10 @@ new_names = [name for name in names if name.startswith('L')]
 
 print(new_names)
 
-#4 
+#4 Use a list comprehension to create a list of all the years from 1900 to 2100 that are leap years. (Hint: a leap year is divisible by 4, but not divisible by 100 unless it's also divisible by 400)
+
+
+leap_years = [year for year in range(1900, 2101) if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)]
+leap_years = [year for year in range(1900, 2101) if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)]
+
+print(leap_years)
