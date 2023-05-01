@@ -6,7 +6,7 @@ List comprehensions provide a concise way to create lists. It consists of bracke
 
 The basic syntax of a list comprehension is:
 
-```python
+```
 [expression for item in list]
 ```
 
@@ -14,7 +14,7 @@ This will construct a new list by applying `expression` to each `item` in the or
 
 Here's a simple example:
 
-```python
+```
 numbers = [1, 2, 3, 4, 5]
 squares = [number**2 for number in numbers]
 ```
@@ -23,7 +23,7 @@ In the code above, `squares` will be a new list containing `[1, 4, 9, 16, 25]`.
 
 List comprehensions can also contain conditions:
 
-```python
+```
 numbers = [1, 2, 3, 4, 5]
 even_squares = [number**2 for number in numbers if number % 2 == 0]
 ```
@@ -38,13 +38,13 @@ Absolutely, let's dive a bit deeper into list comprehensions!
 List comprehensions are a feature in Python that allows you to create lists in a very readable and concise way. They can be used to construct lists in a way that's more readable and often faster than using traditional methods like `for` loops. 
 
 The simplest form of list comprehension is:
-```python
+```
 [expression for item in iterable]
 ```
 The `iterable` can be any object that supports iteration (like lists, tuples, strings, etc.). The `expression` usually uses `item` in some way to compute the values that will be added to the new list.
 
 For example:
-```python
+```
 # traditional way
 squares = []
 for i in range(10):
@@ -56,13 +56,13 @@ squares = [i**2 for i in range(10)]
 Both of these pieces of code do the same thing, but the list comprehension is much shorter and more readable.
 
 You can also include an `if` condition in a list comprehension:
-```python
+```
 [expression for item in iterable if condition]
 ```
 This will only include `item` in the new list if `condition` is `True`.
 
 For example:
-```python
+```
 # traditional way
 even_squares = []
 for i in range(10):
@@ -75,13 +75,13 @@ even_squares = [i**2 for i in range(10) if i % 2 == 0]
 Again, both of these pieces of code do the same thing. The list comprehension is shorter and more readable.
 
 You can also have more than one `for` statement in a list comprehension:
-```python
+```
 [expression for item1 in iterable1 for item2 in iterable2]
 ```
 This is equivalent to a nested `for` loop where `item2` changes every iteration of `item1`.
 
 For example:
-```python
+```
 # traditional way
 pairs = []
 for i in range(3):
