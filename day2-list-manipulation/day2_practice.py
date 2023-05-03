@@ -142,3 +142,15 @@ favorite_meals.sort()
 print(favorite_meals)
 favorite_meals.sort(reverse=True)
 print(favorite_meals)
+
+
+#2a
+list1 = [1, 2, 3] 
+list2 = [10, 20, 30]
+
+list3 = [x*y for x in list1 for y in list2]
+print(list3)
+
+#2b
+combinations = [(x, y) for x in range(1, 6) for y in range(1, 6) if x < y]
+print(combinations)
