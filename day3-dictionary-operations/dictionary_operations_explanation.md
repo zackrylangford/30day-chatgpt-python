@@ -62,3 +62,41 @@ my_dict.clear()
 print(my_dict)  # Output: {}
 ```
 
+
+
+## Basics about dictionaries: 
+
+Python dictionaries are extremely versatile data structures. Here's a comprehensive list of functions and methods you can use with dictionaries:
+
+1. **Creation and Initialization**
+   - `dict()`: Create a new dictionary.
+   - `{}`: Initialize an empty dictionary.
+
+2. **Access**
+   - `d[key]`: Access the value associated with `key`.
+   - `get(key[, default])`: Access the value associated with `key`, return `default` if `key` is not in the dictionary.
+
+3. **Insertion/Updating**
+   - `d[key] = value`: Set `d[key]` to `value`.
+   - `update([other])`: Update the dictionary with the key/value pairs from `other`, overwriting existing keys.
+
+4. **Deletion**
+   - `del d[key]`: Remove `d[key]` from dictionary.
+   - `pop(key[, default])`: Remove `d[key]` and return its value or `default` if `key` is not in the dictionary.
+   - `popitem()`: Remove and return a (key, value) pair from the dictionary.
+   - `clear()`: Remove all items from the dictionary.
+
+5. **Checking Membership**
+   - `key in d`: Check if `key` is in `d`.
+   - `key not in d`: Check if `key` is not in `d`.
+
+6. **Size**
+   - `len(d)`: Return the number of items in the dictionary.
+
+7. **Iteration**
+   - `iter(d)`: Return an iterator over the keys of the dictionary.
+   - `for key in d`: Iterate over the keys in the dictionary.
+
+8. **Keys and Values**
+   - `keys()`: Return a new view of the dictionary's keys.
+   - `values()`: Return a new view of the dictionary's values
