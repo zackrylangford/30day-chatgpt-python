@@ -5,7 +5,7 @@
 **Objective:** Today's focus is on tackling complex list manipulation tasks in Python, building on the understanding of list comprehensions from Day 1.
 
 ### Prompt Used for GPT to Generate Content
-Hello, ChatGPT! Today is Day 2 of my 30-day Python learning challenge. Based on my learning plan, I should be working on complex list manipulation tasks. Can you provide me with a brief explanation of these tasks, some examples, and a few exercises to help me practice and understand the concept better? I have two hours to dedicate to this study session. Thank you!
+Hello, ChatGPT! Today is Day 2 of my 30-day Python learning challenge, and according to my learning plan, I should be studying complex list manipulation tasks. Can you provide me with a detailed explanation of this topic, some examples, and a few exercises to help me practice and understand the concept better? I have two hours to dedicate to this study session. Thank you!
 
 ### Description:
 
