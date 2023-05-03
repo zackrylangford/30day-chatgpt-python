@@ -29,4 +29,5 @@ Absolutely, here are some exercises that align with the topics I've just mention
    - Create a list and use it as a stack. Push `1, 2, 3, 4, 5` onto the stack, then pop three elements off the stack and print the result.
    - Create a list and use it as a queue. Enqueue `1, 2, 3, 4, 5` onto the queue, then dequeue three elements off the queue and print the result.
 
-Work through these exercises, and let me know if you have any questions!
+
+
