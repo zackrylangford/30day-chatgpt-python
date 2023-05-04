@@ -130,3 +130,4 @@ if swapped_d:
     print(swapped_d.popitem())
 else:
     print("The dictionary is empty.")
+
