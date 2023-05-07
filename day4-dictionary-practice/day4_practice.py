@@ -45,7 +45,7 @@ students = {
 These exercises should help you practice and understand complex dictionary tasks better. Good luck!
 
 """
-
+"""
 
 #1 
 
@@ -165,3 +165,11 @@ print(single_list)
 # Remove duplicates by converting to a set and back to a list
 unique_courses = list(set(single_list))
 print(unique_courses)
+
+
+"""
+
+list = [4,3,2,1]
+
+list.sort(reverse=True)
+print(list)

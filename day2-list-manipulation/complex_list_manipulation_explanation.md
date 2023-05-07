@@ -96,3 +96,66 @@ In addition to these, you can customize the sorting behavior by providing a `key
 Remember that the `key` function does not modify the elements themselves; it only provides a value used for sorting. The list or iterable is still made up of its original elements.
 
 For more complex sorting requirements that can't be handled by `key` functions, Python also provides the `functools.cmp_to_key()` function and the `@functools.total_ordering` decorator, which allow you to define custom comparison functions. But these are more advanced topics and are generally only needed for very specific use cases.
+
+
+You can print a list in Python without the square brackets and commas by using the `join()` method. This method allows you to join the elements of a list into a single string with a specified delimiter.
+
+Here's an example of how to print a list without square brackets and commas:
+
+```python
+my_list = ['apple', 'banana', 'cherry']
+
+# Convert the elements to strings, if they are not already
+my_list = [str(x) for x in my_list]
+
+# Join the elements with a space delimiter and print the result
+print(' '.join(my_list))
+```
+
+In this example, the `join()` method is called on the string `' '`, which is a space character. It takes the `my_list` variable as an argument, and it joins the elements of the list with the space character as a delimiter. The output will be:
+
+```
+apple banana cherry
+```
+
+You can replace the space character with any other delimiter if you want a different output format.
+
+To print a list in reverse order, you can use the `reversed()` function or slice notation. Here's how to do it using both methods:
+
+1. Using the `reversed()` function:
+
+```python
+my_list = ['apple', 'banana', 'cherry']
+
+# Convert the elements to strings, if they are not already
+my_list = [str(x) for x in my_list]
+
+# Reverse the list using the reversed() function
+reversed_list = list(reversed(my_list))
+
+# Join the elements with a space delimiter and print the result
+print(' '.join(reversed_list))
+```
+
+2. Using slice notation:
+
+```python
+my_list = ['apple', 'banana', 'cherry']
+
+# Convert the elements to strings, if they are not already
+my_list = [str(x) for x in my_list]
+
+# Reverse the list using slice notation
+reversed_list = my_list[::-1]
+
+# Join the elements with a space delimiter and print the result
+print(' '.join(reversed_list))
+```
+
+Both methods will give you the following output:
+
+```
+cherry banana apple
+```
+
+In either case, the original list is preserved, and a new list (`reversed_list`) is created with the reversed order of elements.
