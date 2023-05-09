@@ -16,7 +16,7 @@ Feel free to ask for clarification, examples, or help with the exercises. Good l
 
 
 """
-
+"""
 # 1 **Average Age**: Given a list of dictionaries representing students with their names, ages, and grades, calculate the average age of the students.
 
 students = [
@@ -48,10 +48,21 @@ students = [
     {'name': 'Eve', 'age': 22, 'grade': 'B'}
 ]
 
-new_dict = {grade:name for student['grade'] in students, student['name'] in students}
+# Initialize an empty dictionary
+new_dict = {}
+
+# Iterate over the list of students
+for student in students:
+    # If the grade is already a key in the dictionary, append the student's name
+    if student['grade'] in new_dict:
+        new_dict[student['grade']].append(student['name'])
+    # If the grade is not a key in the dictionary, add it and set the value to a list containing the student's name
+    else:
+        new_dict[student['grade']] = [student['name']]
+
 print(new_dict)
 
-#3
+#3  **Filter by Grade**: Given a list of dictionaries representing students with their names, ages, and grades, create a new list of dictionaries containing only the students who have a specific grade.
 
 students = [
     {'name': 'Alice', 'age': 20, 'grade': 'A'},
@@ -61,7 +72,17 @@ students = [
     {'name': 'Eve', 'age': 22, 'grade': 'B'}
 ]
 
-#4
+filter_key = input("Choose a grade to filter by - A, B, C, D, F: ")
+filtered_list = []
+for student in students: 
+    if student['grade'] == filter_key:
+        filtered_list.append(student)
+
+for student in filtered_list:
+    print(f"Name: {student['name']}, Grade: {student['grade']}")
+
+print(filtered_list)
+"""
 sold_items = [
     {'product': 'apple', 'quantity': 5},
     {'product': 'banana', 'quantity': 2},
@@ -74,7 +95,20 @@ inventory = {
     'orange': 15
 }
 
-#5
+for item in sold_items:
+    product = item['product']
+    quantity_sold = item['quantity']
+    if product in inventory:
+        inventory[product] -= quantity_sold
+    else:
+        print("Error: Sold an item not in inventory!")
+
+print(inventory)
+
+
+
+#5 **Nested Dictionary to List**: Given a nested dictionary representing students and their courses, extract all the courses into a single list without duplicates.
+
 students = {
     'Alice': {
         'courses': ['Math', 'Physics']
@@ -87,3 +121,11 @@ students = {
     }
 }
 
+courses = set()
+
+for student_info in students.values():
+    for course in student_info['courses']:
+        courses.add(course)
+
+course_list = list(courses)
+print(course_list)
