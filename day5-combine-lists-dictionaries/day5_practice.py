@@ -126,6 +126,8 @@ courses = set()
 for student_info in students.values():
     for course in student_info['courses']:
         courses.add(course)
-
 course_list = list(courses)
 print(course_list)
+    
+
+
